@@ -26,11 +26,11 @@
             </tr>
           </thead>
           <tbody>
-                <tr *ngFor="let customer of customers">
+                <tr *ngFor="let client of clients">
                     <td> {{ customer.id }} </td>
                     <td> {{ customer.name }}</td>
                     <td> {{ customer.address }}</td>
-                    <td> {{ customer.telephoneNumber }}</td>
+                    <td> {{customer.telephoneNumber }}</td>
                     <td> {{ customer.email }}</td>
                     <td><a [routerLink]="['/customerDetails/', customer.id ]">View</a></td>
                 </tr>   
